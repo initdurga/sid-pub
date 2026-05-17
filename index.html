@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid — Platform Engineer</title>
+    <meta name="description" content="Platform engineer, runner, snowboarder. Salt Lake City.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0a0a0a;
+            --fg: #e8e8e8;
+            --muted: #888;
+            --accent: #ff6b35;
+            --border: #222;
+        }
+        body {
+            background: var(--bg);
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Mono", Menlo, monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 4rem 1.5rem;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        h1::before {
+            content: "$ ";
+            color: var(--accent);
+        }
+        .tagline {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: var(--fg);
+        }
+        .catalog {
+            list-style: none;
+            display: grid;
+            gap: 0.75rem;
+        }
+        .catalog a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: #111;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--fg);
+            text-decoration: none;
+            transition: all 0.15s ease;
+        }
+        .catalog a:hover {
+            border-color: var(--accent);
+            transform: translateX(4px);
+        }
+        .catalog .title {
+            font-weight: 500;
+        }
+        .catalog .desc {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        .catalog .arrow {
+            color: var(--muted);
+            font-size: 1.2rem;
+        }
+        .catalog a:hover .arrow {
+            color: var(--accent);
+        }
+        .socials {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .socials a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.15s ease;
+        }
+        .socials a:hover {
+            color: var(--accent);
+        }
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        footer .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            background: var(--accent);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>sid</h1>
+            <p class="tagline">platform engineer / runner / snowboarder · salt lake city</p>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>Senior platform engineer building observability, automation, and distributed systems. Background in Linux/BSD sysadmin work, currently deep in ServiceNow platform and SRE-adjacent infrastructure.</p>
+            <p>Outside work: trail running, snowboarding at Woodward and the Cottonwoods, tarot, instruments, cooking, and writing.</p>
+        </section>
+
+        <section>
+            <h2>Catalog</h2>
+            <ul class="catalog">
+                <li>
+                    <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">
+                        <div>
+                            <div class="title">GitHub</div>
+                            <div class="desc">code, scripts, infrastructure</div>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bymanders.com" target="_blank" rel="noopener">
+                        <div>
+                            <div class="title">bymanders.com</div>
+                            <div class="desc">photography site I built and host</div>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/notes" target="_blank" rel="noopener">
+                        <div>
+                            <div class="title">Notes</div>
+                            <div class="desc">writing on systems, infra, occasional poetry</div>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/resume.pdf" target="_blank" rel="noopener">
+                        <div>
+                            <div class="title">Résumé</div>
+                            <div class="desc">long-form work history</div>
+                        </div>
+                        <span class="arrow">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Elsewhere</h2>
+            <div class="socials">
+                <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">github</a>
+                <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">linkedin</a>
+                <a href="https://x.com/YOUR_X" target="_blank" rel="noopener">x</a>
+                <a href="mailto:hi@initsid.dev">email</a>
+            </div>
+        </section>
+
+        <footer>
+            built with nginx on debian · <span class="cursor"></span>
+        </footer>
+    </div>
+</body>
+</html>
